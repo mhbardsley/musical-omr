@@ -18,3 +18,10 @@ So that the model is only being trained on necessary data, and to make the train
 * Binarisation to retain only the musical notation
 * Sequencing into one dimension, i.e. converting multiple lines into one line
 * Removing extraneous stave lines to separate notes
+
+### Model training
+
+The model serves only to convert the picture representation of a note into a textual representation, in order to extract information. There will actually be multiple models, each aiming to extract different information:
+
+* Pitch (including "rest")
+* Duration (as a category)
